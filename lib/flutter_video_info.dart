@@ -94,7 +94,7 @@ class VideoData {
         : json['author'];
     width = int.tryParse('${json['width']}');
     height = int.tryParse('${json['height']}');
-    orientation = int.tryParse(json["orientation"]);
+    orientation = int.tryParse('${json["orientation"]}');
     filesize = json['filesize'];
     duration =
         json["isfileexist"] ? double.tryParse('${json['duration']}') : null;
